@@ -52,6 +52,14 @@ public class TennisGameTest {
 		assertThat(tennisGame.score(), is("Michel wins the game"));
 	}
 	
+	@Test public void
+	another_player_could_win_a_game() {
+		ThreePointsFor(JEAN);
+		JEAN.scored();
+		
+		assertThat(tennisGame.score(), is("Jean wins the game"));
+	}
+	
 	
 	private void ThreePointsFor(Player player) {
 		TwoPointsFor(player);

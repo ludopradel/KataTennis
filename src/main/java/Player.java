@@ -20,4 +20,8 @@ public class Player {
 		return score;
 	}
 
+	boolean hasWonTheGame() {
+		return getScore() == 4;
+	}
+
 }
