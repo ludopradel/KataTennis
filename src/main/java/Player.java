@@ -12,7 +12,7 @@ public class Player {
 		return name;
 	}
 
-	public void incrementScore() {
+	public void scored() {
 		score ++;
 	}
 

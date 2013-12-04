@@ -5,9 +5,9 @@ public class TennisGame {
 	private Player playerTwo;
 	private String[] scores = {"0", "15", "30", "40"};
 	
-	public TennisGame(String playerOne, String playerTwo) {
-		this.playerOne = new Player(playerOne);
-		this.playerTwo = new Player(playerTwo);
+	public TennisGame(Player playerOne, Player playerTwo) {
+		this.playerOne = playerOne;
+		this.playerTwo = playerTwo;
 	}
 
 	public String score() {
@@ -22,15 +22,6 @@ public class TennisGame {
 
 	private String parseScore(int score) {
 		return scores[score];	
-	}
-
-
-	public void addPointTo(String player) {
-		if (playerOne.getName().equals(player)) {
-			playerOne.incrementScore();
-		} else {
-			playerTwo.incrementScore();
-		}
 	}
 
 }
