@@ -24,4 +24,8 @@ public class Player {
 		return getScore() == 4;
 	}
 
+	String playerHasWonTheGame() {
+		return getName() + " wins the game";
+	}
+
 }

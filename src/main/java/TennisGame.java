@@ -12,10 +12,10 @@ public class TennisGame {
 
 	public String score() {
 		if (playerOne.hasWonTheGame()) 
-			return playerOne.getName() + " wins the game";
+			return playerOne.playerHasWonTheGame();
 		
 		if (playerTwo.hasWonTheGame())
-			return playerTwo.getName() + " wins the game";
+			return playerTwo.playerHasWonTheGame();
 		
 		return parseScore(playerOne.getScore()) + " - " + parseScore(playerTwo.getScore());
 	}
